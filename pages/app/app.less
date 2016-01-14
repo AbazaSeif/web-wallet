@@ -1,0 +1,273 @@
+@import 'layouts/html5/html5.less';
+@import 'pages/transactions/transactions.less';
+@import 'pages/deposit/deposit.less';
+@import 'pages/request-payment/request-payment.less';
+@import 'pages/send/send.less';
+
+@red: #e43939;
+@blue: #71d1f1;
+@tab-bg: #f9f9f9;
+
+body {
+  font-size: 14px;
+  background-color: #f3f3f3;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+b {
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  &:hover {
+    background-color: @red;
+  }
+  transition:0.3s ease all;
+}
+
+header {
+  overflow: hidden;
+  height: 75px;
+  padding: 0 25px;
+  background-color: #fff;
+
+  .logo {
+    display: block;
+    float: left;
+    width: 180px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  nav {
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .exchange-rate {
+      margin-right: 25px;
+    }
+
+    .profile-menu {
+      cursor: pointer;
+      &:hover {
+        background-color: #f3f3f3;
+      }
+    }
+
+    & > div {
+      display: inline-block;
+      padding: 5px 10px;
+    }
+  }
+}
+
+
+main {
+  .clearfix;
+  padding: 2px;
+
+  #accounts {
+    min-height: 600px;
+    width: 350px;
+    background-color: #fff;
+    margin-right: 2px;
+    float: left;
+    padding: 25px;
+
+    table {
+      width: 100%;
+      margin-top: 16px;
+
+      td {
+        cursor: pointer;
+        padding: 10px 0;
+        border-bottom: 1px solid #f6f6f6;
+        i.fa {
+          width: 20px;
+        }
+      }
+      .total td {
+        cursor: normal;
+        padding-top: 5px;
+        border-width: 3px;
+        font-weight: bold;
+      }
+      th {
+        text-align: left;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      td:last-child, th:last-child {
+        text-align: right;
+        font-family: "Lucida Console", Monaco, monospace;
+      }
+    }
+    .add-new-account {
+      color: @blue;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .bitcoin-logo {
+      background-image: url(../../images/B.png);
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      background-size: contain;
+      position: relative;
+      top: 5px;
+    }
+  }
+
+  #actions {
+    min-height: 600px;
+    float: left;
+    width: calc(~"100% - 402px");
+
+    ul#tabs {
+      .clearfix;
+      li {
+        float: left;
+        width: 25%;
+        font-size: 18px;
+        line-height: 18px;
+        cursor: pointer;
+
+        & > div {
+          height: 42px;
+          padding: 15px;
+          background-color: #eee;
+          margin-right: 2px;
+          position: relative;
+          border-top: 3px solid #eee;
+          i {
+            position: absolute;
+            bottom: 10px;
+          }
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+      li:last-child > div {
+        margin-right: 0;
+      }
+      li.active {
+        & > div {
+          border-color: @red;
+          background-color: @tab-bg;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  #content {
+    min-height: 505px;
+    background-color: @tab-bg;
+    padding: 35px 15px;
+  }
+}
+
+footer {
+  padding: 100px;
+  color: #999;
+  text-align: center;
+  a {
+    color: #999;
+  }
+  a:hover {
+    color: @red;
+  }
+}
+
+
+// tooltip
+.help-tip{
+  position: relative;
+}
+.help-tip:hover p{
+  display:block;
+  transform-origin: 100% 0%;
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.help-tip p{  /* The tooltip */
+  display: none;
+  text-align: left;
+  background-color: #1E2021;
+  padding: 20px;
+  margin: 0;
+  width: 300px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  right: -9px;
+  top: 23px;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.help-tip p:before{ /* The pointer of the tooltip */
+  position: absolute;
+  content: '';
+  width:0;
+  height: 0;
+  border:6px solid transparent;
+  border-bottom-color:#1E2021;
+  right:10px;
+  top:-12px;
+}
+.help-tip p:after{ /* Prevents the tooltip from being hidden */
+  width:100%;
+  height:40px;
+  content:'';
+  position: absolute;
+  top:-40px;
+  left:0;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity:100%;
+    transform: scale(1);
+  }
+}
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:100%; }
+}
+
+
+// placeholder font color
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: #ddd;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #ddd;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #ddd;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ddd;
+}
+

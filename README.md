@@ -1,8 +1,18 @@
 # web-wallet
 
-Open source bitcoin wallet
+Open Source Bitcoin Wallet HD
 
-### Run in development mode
+- Trezor support
+- Escrow transactions
+
+### Install
+
+```
+git clone https://github.com/hotwallet/web-wallet.git
+npm install
+```
+
+### Development
 
 ```
 npm start

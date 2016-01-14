@@ -1,0 +1,553 @@
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/* adapted from http://meyerweb.com/eric/tools/css/reset/ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+html,
+body {
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#transactions table {
+  width: 100%;
+}
+#transactions table td,
+#transactions table th {
+  text-align: left;
+  border: 1px solid #eee;
+  padding: 10px;
+  background-color: #fff;
+}
+#transactions table td:last-child {
+  text-align: right;
+}
+#transactions table th {
+  background-color: #eee;
+  padding: 4px 10px;
+}
+#transactions th.sort-header::-moz-selection {
+  background: transparent;
+}
+#transactions th.sort-header::selection {
+  background: transparent;
+}
+#transactions th.sort-header {
+  cursor: pointer;
+}
+#transactions th.sort-header::-moz-selection,
+#transactions th.sort-header::selection {
+  background: transparent;
+}
+#transactions table th.sort-header:after {
+  content: '';
+  float: right;
+  margin-top: 7px;
+  border-width: 0 4px 4px;
+  border-style: solid;
+  border-color: #404040 transparent;
+  visibility: hidden;
+}
+#transactions table th.sort-header:hover:after {
+  visibility: visible;
+}
+#transactions table th.sort-up:after,
+#transactions table th.sort-down:after,
+#transactions table th.sort-down:hover:after {
+  visibility: visible;
+  opacity: 0.4;
+}
+#transactions table th.sort-up:after {
+  border-bottom: none;
+  border-width: 4px 4px 0;
+}
+main:before,
+main:after {
+  content: "";
+  display: table;
+}
+main:after {
+  clear: both;
+}
+main #actions ul#tabs:before,
+main #actions ul#tabs:after {
+  content: "";
+  display: table;
+}
+main #actions ul#tabs:after {
+  clear: both;
+}
+#deposit {
+  text-align: center;
+}
+#deposit .address {
+  background-color: #fff;
+  padding: 25px;
+  display: inline-block;
+  margin: 15px;
+  border: 1px dotted #ccc;
+}
+#deposit li {
+  margin-bottom: 25px;
+}
+#send li {
+  margin-bottom: 25px;
+}
+#send .fa-info-circle {
+  color: #71d1f1;
+  font-size: 16px;
+}
+#send input,
+#send textarea,
+#send select {
+  font-size: 18px;
+  outline: none;
+}
+#send .amount {
+  font-size: 18px;
+  border: 1px solid #eee;
+  padding: 10px;
+  display: inline-block;
+  cursor: text;
+  background-color: #fff;
+}
+#send .amount i {
+  display: inline-block;
+  width: 15px;
+}
+#send .amount input {
+  display: inline-block;
+  border: none;
+  width: 206px;
+}
+#send .amount.usd {
+  border-left: none;
+}
+#send select {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px top 15px;
+  background-size: 16px 16px;
+  font-size: 18px;
+  width: 500px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  border: 1px solid #eee;
+  border-top: none;
+  outline: 0;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+#send select:focus,
+#send select:active {
+  outline: 0;
+}
+#send #recipient {
+  border: 1px solid #eee;
+  padding: 10px;
+  width: 480px;
+}
+#send .fa-book {
+  font-size: 22px;
+}
+#send #description {
+  border: 1px solid #eee;
+  padding: 10px;
+  width: 480px;
+}
+#send .use-escrow {
+  cursor: pointer;
+}
+#send #send-button {
+  margin-top: 10px;
+}
+body {
+  font-size: 14px;
+  background-color: #f3f3f3;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+b {
+  font-weight: bold;
+}
+.button {
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+.button:hover {
+  background-color: #e43939;
+}
+header {
+  overflow: hidden;
+  height: 75px;
+  padding: 0 25px;
+  background-color: #fff;
+}
+header .logo {
+  display: block;
+  float: left;
+  width: 180px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header nav {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header nav .exchange-rate {
+  margin-right: 25px;
+}
+header nav .profile-menu {
+  cursor: pointer;
+}
+header nav .profile-menu:hover {
+  background-color: #f3f3f3;
+}
+header nav > div {
+  display: inline-block;
+  padding: 5px 10px;
+}
+main {
+  zoom: 1;
+  padding: 2px;
+}
+main:before,
+main:after {
+  content: "";
+  display: table;
+}
+main:after {
+  clear: both;
+}
+main #accounts {
+  min-height: 600px;
+  width: 350px;
+  background-color: #fff;
+  margin-right: 2px;
+  float: left;
+  padding: 25px;
+}
+main #accounts table {
+  width: 100%;
+  margin-top: 16px;
+}
+main #accounts table td {
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid #f6f6f6;
+}
+main #accounts table td i.fa {
+  width: 20px;
+}
+main #accounts table .total td {
+  cursor: normal;
+  padding-top: 5px;
+  border-width: 3px;
+  font-weight: bold;
+}
+main #accounts table th {
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+main #accounts table td:last-child,
+main #accounts table th:last-child {
+  text-align: right;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+main #accounts .add-new-account {
+  color: #71d1f1;
+  cursor: pointer;
+  text-align: left;
+}
+main #accounts .bitcoin-logo {
+  background-image: url(../../images/B.png);
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-size: contain;
+  position: relative;
+  top: 5px;
+}
+main #actions {
+  min-height: 600px;
+  float: left;
+  width: calc(100% - 402px);
+}
+main #actions ul#tabs {
+  zoom: 1;
+}
+main #actions ul#tabs:before,
+main #actions ul#tabs:after {
+  content: "";
+  display: table;
+}
+main #actions ul#tabs:after {
+  clear: both;
+}
+main #actions ul#tabs li {
+  float: left;
+  width: 25%;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+}
+main #actions ul#tabs li > div {
+  height: 42px;
+  padding: 15px;
+  background-color: #eee;
+  margin-right: 2px;
+  position: relative;
+  border-top: 3px solid #eee;
+}
+main #actions ul#tabs li > div i {
+  position: absolute;
+  bottom: 10px;
+}
+main #actions ul#tabs li > div:hover {
+  background-color: #f0f0f0;
+}
+main #actions ul#tabs li:last-child > div {
+  margin-right: 0;
+}
+main #actions ul#tabs li.active > div {
+  border-color: #e43939;
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+main #content {
+  min-height: 505px;
+  background-color: #f9f9f9;
+  padding: 35px 15px;
+}
+footer {
+  padding: 100px;
+  color: #999;
+  text-align: center;
+}
+footer a {
+  color: #999;
+}
+footer a:hover {
+  color: #e43939;
+}
+.help-tip {
+  position: relative;
+}
+.help-tip:hover p {
+  display: block;
+  transform-origin: 100% 0%;
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.help-tip p {
+  /* The tooltip */
+  display: none;
+  text-align: left;
+  background-color: #1E2021;
+  padding: 20px;
+  margin: 0;
+  width: 300px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  right: -9px;
+  top: 23px;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.help-tip p:before {
+  /* The pointer of the tooltip */
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom-color: #1E2021;
+  right: 10px;
+  top: -12px;
+}
+.help-tip p:after {
+  /* Prevents the tooltip from being hidden */
+  width: 100%;
+  height: 40px;
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/* do not group these rules */
+*::-webkit-input-placeholder {
+  color: #ddd;
+}
+*:-moz-placeholder {
+  /* FF 4-18 */
+  color: #ddd;
+}
+*::-moz-placeholder {
+  /* FF 19+ */
+  color: #ddd;
+}
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ddd;
+}

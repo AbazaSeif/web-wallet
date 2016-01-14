@@ -1,0 +1,75 @@
+#send li {
+  margin-bottom: 25px;
+}
+#send .fa-info-circle {
+  color: #71d1f1;
+  font-size: 16px;
+}
+#send input,
+#send textarea,
+#send select {
+  font-size: 18px;
+  outline: none;
+}
+#send .amount {
+  font-size: 18px;
+  border: 1px solid #eee;
+  padding: 10px;
+  display: inline-block;
+  cursor: text;
+  background-color: #fff;
+}
+#send .amount i {
+  display: inline-block;
+  width: 15px;
+}
+#send .amount input {
+  display: inline-block;
+  border: none;
+  width: 206px;
+}
+#send .amount.usd {
+  border-left: none;
+}
+#send select {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px top 15px;
+  background-size: 16px 16px;
+  font-size: 18px;
+  width: 500px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  border: 1px solid #eee;
+  border-top: none;
+  outline: 0;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+#send select:focus,
+#send select:active {
+  outline: 0;
+}
+#send #recipient {
+  border: 1px solid #eee;
+  padding: 10px;
+  width: 480px;
+}
+#send .fa-book {
+  font-size: 22px;
+}
+#send #description {
+  border: 1px solid #eee;
+  padding: 10px;
+  width: 480px;
+}
+#send .use-escrow {
+  cursor: pointer;
+}
+#send #send-button {
+  margin-top: 10px;
+}

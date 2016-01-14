@@ -1,0 +1,13 @@
+#deposit {
+  text-align: center;
+}
+#deposit .address {
+  background-color: #fff;
+  padding: 25px;
+  display: inline-block;
+  margin: 15px;
+  border: 1px dotted #ccc;
+}
+#deposit li {
+  margin-bottom: 25px;
+}

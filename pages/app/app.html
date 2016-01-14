@@ -1,0 +1,41 @@
+
+<header>
+  <img src="./images/logo.png" class="logo" />
+  <nav>
+    <div class="exchange-rate">
+      1 BTC = $449.65
+    </div>
+    <div class="profile-menu">
+      Satoshi Nakamoto
+      <i class="fa fa-caret-down"></i>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div id="accounts">
+    {{>partials/accounts}}
+  </div>
+
+  <div id="actions">
+    <ul id="tabs">
+      <li data-view="transactions" class="active"><div><i>Transactions</i></div></li>
+      <li data-view="deposit"><div><i>Deposit</i></div></li>
+      <li data-view="request-payment"><div><i>Request Payment</i></div></li>
+      <li data-view="send"><div><i>Send</i></div></li>
+    </ul>
+    <div id="content">
+      {{>pages/transactions}}
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div>
+    &copy; {{year}} E-COIN LLC, All Rights Reserved
+  </div>
+  <div>
+    This software is open source. Star it on github <a href="https://github.com/hotwallet/web-wallet">here</a>!
+  </div>
+</footer>

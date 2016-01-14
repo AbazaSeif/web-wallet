@@ -1,0 +1,67 @@
+
+<h2>Create a payment page</h2>
+
+<form id="request-payment">
+
+  <ul>
+
+    <li>
+      <label>
+      Amount:
+      </label>
+      <div>
+        <div class="amount btc">
+          <i class="fa fa-btc"></i>
+          <input type="text" id="amount" placeholder="0.0000" />
+        </div><div class="amount usd">
+          <i>$</i>
+          <input type="text" id="amount-usd" placeholder="0.00" />
+        </div>
+      </div>
+      <div>
+        <select>
+          <option value="abc">Will's Hot Wallet (0.8750)</option>
+        </select>
+      </div>
+    </li>
+
+    <li>
+      <label>
+      What for?
+      </label>
+      <div>
+        <textarea id="description" placeholder="pizza"></textarea>
+      </div>
+    </li>
+
+    <li>
+      <label class="use-escrow">
+        <input type="checkbox" />
+        Use escrow service +$5
+      </label>
+      <i class="fa fa-info-circle help-tip">
+        <p>
+          Funds are held in a 2-of-3 joint account until delivery.
+          E-COIN LLC charges 15% arbitration fee if there is a dispute.
+        </p>
+      </i>
+    </li>
+
+    <li>
+      <label>
+        Send payment link to:
+        <i class="fa fa-info-circle help-tip">
+          <p>A link to a  recipient.</p>
+        </i>
+      </label>
+      <div>
+        <input type="text" id="recipient" placeholder="Email address" />
+      </div>
+    </li>
+
+    <li>
+      <a href="#" id="send-button" class="button">Send Payment</a>
+    </li>
+  </ul>
+
+</form>

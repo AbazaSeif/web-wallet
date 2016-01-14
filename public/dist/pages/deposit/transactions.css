@@ -1,0 +1,50 @@
+#transactions table {
+  width: 100%;
+}
+#transactions table td,
+#transactions table th {
+  text-align: left;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+#transactions table td:last-child {
+  text-align: right;
+}
+#transactions table th {
+  background-color: #f6f6f6;
+}
+#transactions th.sort-header::-moz-selection {
+  background: transparent;
+}
+#transactions th.sort-header::selection {
+  background: transparent;
+}
+#transactions th.sort-header {
+  cursor: pointer;
+}
+#transactions th.sort-header::-moz-selection,
+#transactions th.sort-header::selection {
+  background: transparent;
+}
+#transactions table th.sort-header:after {
+  content: '';
+  float: right;
+  margin-top: 7px;
+  border-width: 0 4px 4px;
+  border-style: solid;
+  border-color: #404040 transparent;
+  visibility: hidden;
+}
+#transactions table th.sort-header:hover:after {
+  visibility: visible;
+}
+#transactions table th.sort-up:after,
+#transactions table th.sort-down:after,
+#transactions table th.sort-down:hover:after {
+  visibility: visible;
+  opacity: 0.4;
+}
+#transactions table th.sort-up:after {
+  border-bottom: none;
+  border-width: 4px 4px 0;
+}
