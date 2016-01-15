@@ -450,6 +450,9 @@ main #actions ul#tabs li > div:hover {
 main #actions ul#tabs li:last-child > div {
   margin-right: 0;
 }
+main #actions ul#tabs li[data-view="request-payment"] i {
+  width: 120px;
+}
 main #actions ul#tabs li.active > div {
   border-color: #e43939;
   background-color: #f9f9f9;
