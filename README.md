@@ -5,6 +5,7 @@ Open Source Bitcoin Wallet HD
 - Trezor support
 - Request payment pages
 - Escrow transactions
+- Floating transaction fee
 
 ### Install
 
